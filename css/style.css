@@ -1,0 +1,1324 @@
+@charset "utf-8";
+rt {
+	display: none;
+}
+.ruby_flag rt {
+	display: ruby-text;
+}
+#change_ruby {
+    position: fixed;
+    z-index: 54545;
+    top: 5%;
+    left: 5%;
+    background-color: red;
+    width: 10%;
+    height: 5%;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+        font-family: "Noto Serif JP", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+body {
+    z-index: -2147483646;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 1;
+    background-image:
+    radial-gradient(300px 300px , #92D1FF 20%, transparent 20%),
+    radial-gradient(200px 200px , #d4dcf9 20%, transparent 20%),
+    radial-gradient(500px 500px ,#92d1ff 20%, transparent 20%),
+    radial-gradient(700px 700px , #92D1FF 20%, transparent 20%),
+    radial-gradient(650px 650px , #D4DCF9 20%, transparent 20%),
+    radial-gradient(500px 500px , #D4DCF9 20%, transparent 20%);
+    background-size: 
+    1230px 1280px,
+    810px 910px,
+    1470px 990px,
+    1200px 1700px,
+    1520px 1200px,
+    1100px 1300px;
+    background-position: 
+    -300px -550px,
+    -200px 100px,
+    50px 510px,
+    -200px -550px,
+    -180px -250px,
+    130px -150px;
+}
+
+img {
+    max-width: 100%;
+} 
+#loading {
+    /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2147483647;
+    background:#FBFFD4;
+    text-align:center;
+}
+/* Loading画像中央配置　*/
+#loading_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    color:#000;
+}
+
+header {
+    position: relative;
+    z-index: 2147483645;
+    width: 100%;
+    height: 100vh;
+  }
+
+.top-img {
+    position: absolute;
+    z-index: -5556;
+    background-image: url(../images/frank-mckenna-OD9EOzfSOh0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .filter {
+    position: absolute;
+    z-index: -5555;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0.6;
+  }
+  .header-img1 {
+    position: absolute;
+    z-index: 8888;
+    top: 45%;
+    left: 22%;
+    background-image: url(../images/DSC01975.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 24%;
+    height: 44%;
+    opacity: 1;
+    border-radius: 48% 52% 41% 59% / 76% 73% 27% 24%;
+    border: 2px solid #fff;
+    object-fit: c;
+  }
+  .header-img2 {
+    position: absolute;
+    z-index: 8887;
+    bottom: 4%;
+    left: 40%;
+    background-image: url(../images/DSC01963.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 42%;
+    height: 70%;
+    opacity: 1;
+    border-radius: 84% 16% 40% 55% / 52% 39% 61% 48%;
+    border: 1px solid #fff;
+  }
+  .header-img3 {
+    position: absolute;
+    z-index: 8886;
+    top: 18%;
+    right: 9%;
+    background-image: url(../images/DSC02213.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 15%;
+    height: 20%;
+    opacity: 1;
+    border-radius: 70% 30% 75% 25% / 34% 52% 48% 66%;
+    border: 1px solid #fff;
+  }
+
+  .header-inner {
+    position: absolute;
+    z-index: 666678;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+  }
+  header .name {
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    font-size: 25px;
+    z-index: 444;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  header .title1{
+    position: absolute;
+    z-index: 214748;
+    top: 25%;
+    left: 16%;
+    writing-mode: vertical-rl;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: #fff;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+  header .title2 {
+    position: absolute;
+    z-index: 214747;
+    top: 35%;
+    left: 10%;
+    writing-mode: vertical-rl;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: #fff;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .menu ul {
+    z-index: 77777;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    color: #fff;
+  }
+  
+  .menu ul li {
+    z-index: 55555;
+    margin: 0 10px;
+    padding: 0;
+  }
+  
+  .menu ul li a {
+    z-index: 55556;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+/* ルビ */
+
+/* ポップアップ */
+/* オーバーレイ */
+#overlay{
+    position: fixed;
+    top:0;
+    z-index: 2147483646;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  #overlay.overlay-on{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .flex{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  #overlay-inner{
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    padding:30px auto;
+    background-color:#FFF;
+    text-align: left;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  #overlay-inner::-webkit-scrollbar{
+    display:none;
+  }
+  /* 追従 */
+  #open{
+    position:fixed;
+    z-index: 21474836;
+    background:#f8ec00;
+    width:10%;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:14px;
+    text-align:center;
+    color:#333;
+    padding:20px 0;
+    right:20px;
+    bottom:20px;
+    box-shadow:1px 1px 5px #aaa;
+  }
+  #close{
+    display:block;
+    margin:70px auto;
+    padding:10px 30px;
+    cursor: pointer;
+  }
+    /* お問い合わせ */
+form {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* コンセプト */
+#concept {
+    margin: 0 auto;
+    padding: 100px 0;   
+}
+#concept .text {
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    margin: 0;
+}
+
+#concept video {
+    display: block;
+    text-align: center;
+    margin: 70px auto 0 auto;
+    width: 55%;
+    height: 40%;
+}
+
+/* 作業 */
+#sagyou {
+    position: relative;
+    margin: 150px 0 0 0 ;
+    z-index: 1;
+}
+#sagyou .kaisou {
+    position: absolute;
+    z-index: -1;
+    top: -3%;
+    left:38%;
+}
+#sagyou h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+#sagyou h3 {
+    font-size: 25px;
+    margin: 0px 0 40px 0;
+}
+.text1 h3::after {
+    content: '';
+    display: block;
+    width: 77px;
+    height: 3px;
+    z-index: 555;
+    background-color: #d9d9d9;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+#sagyou .sagyou {
+    width: 40%;
+    height: 50%;
+
+}
+.naiyou {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.text1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+    line-height: 2;
+    font-size: 20px;
+}
+.sagyou1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+.sagyou2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.sagyou3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+/* 活動 */
+#katudou {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 150vh;
+    margin: 120px 0 0 0;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#katudou .kai {
+    position: absolute;
+    z-index: -2;
+    top: 20%;
+    left: 35%;
+}
+#katudou h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0px auto 40px auto;
+    padding: 0px 0 0 0;
+}
+/* スケジュール */
+.schedule {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .schedule h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+  .flex-schedule {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-schedule li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    list-style-image: url(../images/green.kai.png);
+  }
+  
+  .flex-schedule .area {
+    padding: 5px;
+    display: block;
+    width: 100%;
+  }
+  
+  .flex-schedule li .time {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-basis: 5em;
+    margin: 0 20px 0 0;
+  }
+  
+  .flex-schedule .sch_box {
+    position: relative;
+    padding: 1em;
+  }
+  
+  .flex-schedule::before {
+    position: absolute;
+    z-index: 9999;
+    left: -23px;
+    top: 20px;
+    width: 20px;
+    height: 40px;
+    border: 1px border #808080 ;
+  }
+  
+  .flex-schedule .sch_title {
+    font-size: 24px;
+  }
+  
+  .flex-schedule .sch_tx {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+/* Q&A */
+#question {
+    position: relative;
+    width: 65%;
+    z-index: 3;
+    margin: 150px auto;
+    padding: 0 auto;
+}
+#question .kurage {
+    position: absolute;
+    z-index: -3;
+    top: -7%;
+    left: 35%;
+}
+#question h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0 40px 0;
+    padding: 30px 0;
+}
+/* アコーディオン */
+.ac3 dl,
+.ac3 dt,
+.ac3 dd {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.ac3 dl+dl {
+    margin-top: 1rem;
+}
+.ac3 dt,
+.ac3 dd {
+    margin: 10px 0 0 0;
+    padding: 20px;
+}
+.ac3 dl {
+    position: relative;
+    overflow: hidden;
+}
+.ac3 dl>input {
+    display: none;
+}
+.ac3 dt {
+    position: relative;
+    z-index: 1;
+    padding-right: 40px;
+    padding-left: 2.5em;
+    cursor: pointer;
+    background: #fff;
+    transition: .4;
+    border: solid 1px #000;
+    font-size: 25px;
+
+}
+.ac3 dd {
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: .4s;
+    background: #fff;
+    border: solid 1px #fff;
+    border-top: none;
+    padding-left: 2.5em;
+    font-size: 20PX;
+    line-height: 2;
+}
+.ac3 dl>input:checked+label+dd {
+    position: relative;
+    visibility: visible;
+    transform: translateY(0);
+}
+.ac3 dt::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: 50%;
+    right: 10px;
+    background: #fff;
+    transform: translateY(-50%);
+}
+.ac3 dt::after {
+    content: ”;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    transition: .4s;
+    transform: translateY(-50%) rotate(90deg);
+}
+.ac3 dl>input:checked+label>dt::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.ac3 dt span,
+.ac3 dd span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    top: 50%;
+    left: .5em;
+    width: 1.5em;
+    height: 1.5em;
+    transform: translateY(-50%);
+    border: solid 1px #fff;
+}
+.ac3 dd span {
+    top: 10px;
+    transform: translateY(0);
+}
+#question .qqq {
+    list-style: inside;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 流れ */
+#riyou {
+    position: relative;
+    z-index: 5;
+    margin: 150px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 150vh;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#riyou .sakana {
+    position: absolute;
+    z-index: -4;
+}
+#riyou .wakame {
+    position: absolute;
+    z-index: -5;
+    top: 12%;
+    left: 35%;
+}
+#riyou .ikari {
+    position: absolute;
+    z-index: -8;
+    top: -15%;
+    right: 5%;
+    transform: rotate(30deg);
+}
+#riyou h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0;
+    padding: 230px 0 0 0;
+}
+#riyou .nagare li {
+    width: 65%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 7px 0;
+    border: solid 2px blue;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+#riyou .nagare .too {
+    content: '⇓';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 40px;
+    z-index: 10000;
+    margin: 0;
+    padding: 0;
+  }
+
+/* スタッフ */
+#staff {
+    position: relative;
+    z-index: 6;
+    margin: 150px auto;
+    padding: 0;
+    width: 80%;
+}
+#staff .nami {
+    position: absolute;
+    z-index: -6;
+    right: 5%;
+    top: -10%;
+}
+#staff .co-ral {
+    position: absolute;
+    z-index: -7;
+    top: 2%;
+    left: 35%;
+}
+#staff h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+    padding: 100px 0 0 0;
+}
+#staff h3::after {
+    content: '';
+    display: block;
+    width: 77px;
+    height: 3px;
+    z-index: 555;
+    background-color: #d9d9d9;
+    margin: 10px auto;
+    padding: 0;
+}
+.textsss {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.stafftext {
+    text-align: center;
+}
+.stafftext img {
+    width: 50%;
+    height: 50%;
+}
+.staff1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+
+}
+.staff2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+}
+#staff p {
+    width: 40%;
+    height: auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 22px;
+    margin: auto auto;
+    padding: 30px auto;
+}
+#staff p::after {
+    margin-top: 150px;
+        border: 8px solid;
+        border-color: transparent;
+        border-top-color: white;
+        margin-left: -8px;
+    
+}
+/* アクセス */
+#access {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    margin: 150px 0 77px 0;
+    padding: 0;
+}
+#access .fune {
+    position: absolute;
+    z-index: -8;
+    top: 5%;
+    left: 40%;
+}
+#access h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+    padding: 100px 0 0 0;
+}
+.google {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.text3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.map1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+.map2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+#access h3 {
+    line-height: 3;
+    font-weight: 600;
+    font-size: 25px;
+}
+#access p {
+    line-height: 1;
+    font-size: 18px;
+}
+.google-map1 {
+    width: 50%;
+    height: 400px;
+}
+.google-map2 {
+    width: 50%;
+    height: 400px;
+}
+
+/* footer */
+footer {
+    margin: 150px 0 0px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 2;
+    width: 100%;
+    height: 400px;
+    background-color: #032376;
+    color: #FFF;
+}
+footer h1 {
+    font-size: 25px;
+}
+footer img {
+    width: 15%;
+}
+footer .tel {
+    font-weight: bold;
+}
+.copyright {
+    text-align: center;
+    background-color: #d9d9d9;
+}
+@media (max-width: 1000px) {
+    header .title1{
+        top: 25%;
+        left: 17%;
+        font-size: 35px;
+      }
+      header .title2 {
+        top: 35%;
+        left: 10%;
+        font-size: 35px;
+      }
+    
+    
+}
+@media (max-width: 900px) {
+    /* ハンバーガーメニュー */
+/* ハンバーガーメニュー */
+.menubutton {
+    position: fixed;
+    width: 7%;
+    height: 40px;
+    right: 10%;
+    cursor: pointer;
+    z-index: 2147483646;
+    margin: 0;
+    padding: 0;
+    }
+    .menubutton span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 5px;
+    background: #000000;
+    transition: all .5s;
+    z-index: 20000;
+    }
+    .menubutton span:first-child {
+    top: 10px;
+    }
+    .menubutton span:nth-child(2) {
+    top: 50%;
+    }
+    .menubutton span:last-child {
+    top: 30px;
+    }
+    .menubutton.open span:first-child {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .menubutton.open span:nth-child(2) {
+    opacity: 0;
+    }
+    .menubutton.open span:last-child {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    .menu {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      transition: all .5s;
+      position: fixed;
+    }
+    .menu.open {
+      left: 0;
+      top: 0;
+    }  
+    .menu ul {
+        background-color: #FBFFD4;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        z-index: 21474837;
+        overflow: scroll;
+        scrollbar-width: none;
+        opacity: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .menu li {
+        color: #000;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 2;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    header .title1{
+        top: 25%;
+        left: 18%;
+        font-size: 35px;
+      }
+      header .title2 {
+        top: 35%;
+        left: 10%;
+        font-size: 35px;
+      }
+      #open{
+        width:18%;
+        height: 7%;
+        border-radius:10px;
+        text-decoration:none;
+        font-size:12px;
+        text-align:center;
+        color:#333;
+        padding:0;
+        right:20px;
+        bottom:20px;
+        box-shadow:0;
+      }
+      #overlay-inner{
+        width: 90%;
+        height: 70vh;
+        margin: 0 auto;
+        padding:10px auto;
+      }
+    
+}
+
+@media (max-width: 800px) {
+    .header-img1 {
+        position: absolute;
+        z-index: 8888;
+        top: 70%;
+        left: 5%;
+        background-image: url(../images/DSC01975.JPG);
+        background-size: cover;
+        background-position: center;
+        width: 35%;
+        height: 20%;
+        opacity: 1;
+        border-radius: 48% 52% 41% 59% / 76% 73% 27% 24%;
+        border: 2px solid #fff;
+      }
+      .header-img2 {
+        position: absolute;
+        z-index: 8887;
+        bottom: 25%;
+        left: 10%;
+        background-image: url(../images/DSC01963.JPG);
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 42%;
+        opacity: 1;
+        border-radius: 93% 7% 50% 50% / 76% 16% 84% 24%;
+        border: 1px solid #fff;
+      }
+      .header-img3 {
+        position: absolute;
+        z-index: 8886;
+        top: 20%;
+        right: 9%;
+        background-image: url(../images/DSC02213.JPG);
+        background-size: cover;
+        background-position: center;
+        width: 35%;
+        height: 12%;
+        opacity: 1;
+        border-radius: 65% 35% 30% 70% / 30% 38% 62% 70%;
+        border: 1px solid #fff;
+      }    
+      header .name {
+        font-size: 14px;
+      }
+    
+    header .title1{
+        top: 10%;
+        left: 18%;
+        font-size: 25px;
+      }
+      header .title2 {
+        top: 15%;
+        left: 10%;
+        font-size: 25px;
+      }
+    #concept .text {
+        font-size: 20px;
+        margin: 0;
+        padding: 0 20px;
+    }    
+    #concept video {
+        display: block;
+        text-align: center;
+        margin: 70px auto 0 auto;
+        width: 70%;
+        height: 50%;
+    }
+    #sagyou .sagyou {
+        width: 80%;
+        height: 50%;
+    }
+    #sagyou h2,
+    #katudou h2,
+    #question h2,
+    #riyou h2,
+    #staff h2,
+    #access h2 {       
+    font-size: 30px;
+    }    
+    .sagyou1 {
+        flex-direction: column;
+    }
+    .sagyou2 {
+        flex-direction: column-reverse;
+    }
+    .sagyou3 {
+        flex-direction: column;
+    }
+    #sagyou .kaisou,    
+    #katudou .kai,
+    #question .kurage,
+    #riyou .wakame,
+    #staff .co-ral,        
+    #access .fune {
+        left: 25%;
+        right: auto;
+    }       
+    .text1 p {
+        font-size: 15px;
+    }
+    #sagyou h3,
+    .text1 h3,
+    #katudou h3,
+    .schedule h3,
+    #access h3 {
+        font-size: 18px;
+        font-weight: 100;
+    }
+    #katudou {
+        height: 120vh;
+    }    
+    .schedule {
+        flex-direction: column;
+        height: 400px;
+        margin: 200px auto 0;
+        padding: 0px auto 30px;
+      }    
+    
+    .flex-schedule .sch_title {
+        font-size: 16px;
+      }
+    #access {
+        height: 110vh;
+    }
+    #staff {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .stafftext img {
+        width: 70%;
+        height: 50%;
+    }    
+    #staff .nami {
+        display: none;
+    }
+    .stafftext {
+        font-size: 15px;
+        width: 100%;
+
+    }
+    #staff p {
+        width: 70%;
+        padding: 10px 0 0 0;
+        font-size: 12px;
+    }    
+    .staff1 {
+        flex-direction: column;
+    }
+    .staff2 {
+        flex-direction: column;
+    }
+    
+    .ac3 dt {
+        font-size: 15px;
+        text-align: start;
+    }
+    .ac3 dd {
+        font-size: 12PX;
+    }
+    
+    #riyou {
+        height: 90vh;
+    }    
+    #riyou .nagare li {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 15px;
+        height: 40px;
+    }
+    #riyou .sakana {
+        top: 50%;;
+    }
+    #riyou .ikari {
+        display: none;
+    }
+
+    #access {
+        margin: 20px 0 40px 0;
+        padding: 0;
+    }
+    #access p {
+        font-size: 14px;
+    }    
+    .google-map1 {
+        width: 80%;
+        height: 200px;
+    }
+    .google-map2 {
+        width: 80%;
+        height: 200px;
+    }        
+    footer {
+        flex-direction: column;
+        margin: 200px 0 0px 0;
+        padding: 10px 0;
+    }
+    footer .logo {
+        width: 30%;
+    }
+}
+@media (max-width: 700px) {
+    #concept .text {
+        font-size: 15px;
+    }
+    footer img {
+        width: 10%;
+    }
+    footer h1 {
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 10px;
+    } 
+}
+@media (max-width: 600px) {
+    .map1 {
+        flex-direction: column-reverse;
+        }
+    .map2 {
+         flex-direction: column-reverse;
+    }
+    #katudou {
+        height: 100vh;
+    }
+    
+}
+@media (max-width: 550px) {
+    header .title1{
+        top: 10%;
+        left: 22%;
+        font-size: 25px;
+      }
+      header .title2 {
+        top: 15%;
+        left: 10%;
+        font-size: 25px;
+      }
+      #open{
+        font-size:7px;
+      }
+  
+}
+@media (max-width: 500px) {
+    #sagyou h2,
+    #katudou h2,
+    #question h2,
+    #riyou h2,
+    #staff h2,
+    #access h2 {       
+    font-size: 25px;
+    }
+    #sagyou h3,
+    .text1 h3,
+    #katudou h3,
+    .schedule h3,
+    #access h3 {
+        font-size: 18px;
+        font-weight: 100;
+    }
+    #sagyou .kaisou,    
+    #katudou .kai,
+    #question .kurage,
+    #riyou .wakame,
+    #staff .co-ral,        
+    #access .fune {
+        left: 25%;
+        right: auto;
+    }       
+
+}
+
+@media (max-width: 400px) {
+    .schedule {
+        height: 430px;
+        margin: 0;
+        padding: 380px 0 30px 0;
+      }    
+      #katudou {
+        height: 130vh;
+    }
+    #access {
+        margin: 10px 0 70px 0;
+        padding: 0;
+    }
+    .google-map1 {
+        width: 80%;
+        height: 200px;
+    }
+    .google-map2 {
+        width: 80%;
+        height: 200px;
+    }        
+    footer {
+        margin: 300px 0 0px 0;
+    }
+}
+@media (max-width: 350px) {
+    header .title1{
+        top: 15%;
+        left: 25%;
+        font-size: 22px;
+      }
+      header .title2 {
+        top: 15%;
+        left: 10%;
+        font-size: 22px;
+      }
+      #sagyou .kaisou,    
+      #katudou .kai,
+      #question .kurage,
+      #riyou .wakame,
+      #staff .co-ral,        
+      #access .fune {
+          left: 25%;
+          right: auto;
+      }       
+      #open{
+        width: 22%;
+        font-size:9px;
+      }
+      #katudou {
+        height: 140vh;
+    }    
+    .schedule {
+        flex-direction: column;
+        height: auto;
+        margin: -400px auto 0;
+        padding: 0px auto 30px;
+      }    
+}
